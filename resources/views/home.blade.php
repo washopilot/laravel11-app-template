@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel with Vite, React, and TypeScript</title>
     @viteReactRefresh
-    @vite('resources/js/app.tsx')
+    @vite('resources/js/main.tsx')
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="root"></div>
 </body>
 
 </html>

@@ -1,5 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
 import ExampleComponent from './components/ExampleComponent'
 
 const App = () => {
@@ -10,4 +8,4 @@ const App = () => {
     )
 }
 
-ReactDOM.createRoot(document.getElementById('app')!).render(<App />)
+export default App
