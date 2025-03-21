@@ -5,7 +5,7 @@ services:
             target: php
             dockerfile: docker/Dockerfile
             args:
-                uid: "${WWWUSER}"
+                uid: '${WWWUSER}'
         environment:
             - APACHE_RUN_USER=#${WWWUSER}
             - APACHE_RUN_GROUP=#${WWWUSER}
@@ -18,7 +18,7 @@ services:
             - ./:/var/www/html:rw
         restart: unless-stopped
         healthcheck:
-            test: ["CMD", "curl", "-f", "http://localhost:80"]
+            test: ['CMD', 'curl', '-f', 'http://localhost:80']
             interval: 30s
             timeout: 10s
             retries: 3
